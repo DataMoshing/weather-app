@@ -1,4 +1,7 @@
 import "./style.css";
-import getData from "./test"
+import { getApi, btn } from "./weather"
 
-console.log(getData)
+btn.addEventListener("click", (e) => {
+    e.preventDefault()
+    getApi()
+})
