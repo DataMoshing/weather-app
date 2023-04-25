@@ -1,8 +1,11 @@
-async function getApi() {
+const btn = document.getElementById("generate")
 
-    const URL = "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=02dbfb3b0a9eca931937cb67ff5eba51&units=imperial"
+async function getApi() {
     try {
-        const response = await fetch(URL, { mode: 'cors' })
+        let URL = "http://api.openweathermap.org/geo/1.0/direct?&limit=5&appid=02dbfb3b0a9eca931937cb67ff5eba51&units=imperial&q="
+        const input = document.getElementById("search").value.trim()
+        URL = URL.concat(input)
+        const response = await fetch(URL, { mode: "cors" })
         const getData = await response.json()
         console.log(getData)
         return getData
@@ -11,4 +14,6 @@ async function getApi() {
         return undefined
     }
 }
-export default getApi
+
+export { getApi, btn }
+
