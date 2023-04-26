@@ -466,6 +466,40 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/weather.js":
+/*!************************!*\
+  !*** ./src/weather.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "btn": () => (/* binding */ btn),
+/* harmony export */   "getApi": () => (/* binding */ getApi)
+/* harmony export */ });
+const btn = document.getElementById("generate")
+
+async function getApi() {
+    try {
+        let URL = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&appid=02dbfb3b0a9eca931937cb67ff5eba51&q="
+        const input = document.getElementById("search").value.trim()
+        URL = URL.concat(input)
+        const response = await fetch(URL, { mode: "cors" })
+        const getData = await response.json()
+        console.log(getData)
+        return getData
+    } catch (error) {
+        console.log(error)
+        return undefined
+    }
+}
+
+
+
+
+
 /***/ })
 
 /******/ 	});
@@ -549,8 +583,14 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _weather__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./weather */ "./src/weather.js");
 
 
+
+_weather__WEBPACK_IMPORTED_MODULE_1__.btn.addEventListener("click", (e) => {
+    e.preventDefault()
+    ;(0,_weather__WEBPACK_IMPORTED_MODULE_1__.getApi)()
+})
 })();
 
 /******/ })()
