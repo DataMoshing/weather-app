@@ -13,10 +13,10 @@ async function getApi() {
 
         const mainStr = [getData.sys.country, getData.name, getData.main, getData.weather[0].description]
 
-        window.serializedStr = JSON.stringify(mainStr, null, " ")
-        window.serializedStr = window.serializedStr.replace(/["']/g, "").replace(/[{}]/g, "").replace(/[[\]]/g, "")
+        let serializedObj = JSON.stringify(mainStr, null, " ")
+        serializedObj = serializedObj.replace(/["']/g, "").replace(/[{}]/g, "").replace(/[[\]]/g, "")
 
-        document.body.append(window.serializedStr)
+        document.body.append(serializedObj)
         // return getData
     } catch (error) {
         console.log(error)
