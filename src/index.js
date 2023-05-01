@@ -1,8 +1,8 @@
 import "./style.css";
-import { getApi, btn } from "./weather"
-import { } from "./dom"
+import { btn, getApi } from "./weather"
+import display from "./dom"
 
 btn.addEventListener("click", (e) => {
     e.preventDefault()
-    getApi()
+    getApi().then((display))
 })
