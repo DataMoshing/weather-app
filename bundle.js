@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
@@ -7,7 +8,6 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "input[id=search] {\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}\n\n.main-wrap {\n    width: 135px;\n    /* display: flex; */\n    /* flex-direction: row; */\n    margin-top: 1rem;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,YAAY;IACZ,mBAAmB;IACnB,yBAAyB;IACzB,gBAAgB;AACpB","sourcesContent":["input[id=search] {\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}\n\n.main-wrap {\n    width: 135px;\n    /* display: flex; */\n    /* flex-direction: row; */\n    margin-top: 1rem;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "input[id=search] {\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,YAAY;AAChB;;AAEA;IACI,WAAW;AACf","sourcesContent":["input[id=search] {\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -34,7 +34,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "input[id=search] {\n    width: 150px;\
   \*****************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -129,7 +128,6 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -155,7 +153,6 @@ module.exports = function (item) {
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -210,7 +207,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -304,7 +300,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -348,7 +343,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -368,7 +362,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -388,7 +381,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -459,7 +451,6 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -481,9 +472,24 @@ module.exports = styleTagTransform;
 /*!********************!*\
   !*** ./src/dom.js ***!
   \********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// import { getApi } from "./weather";
 
+function display(getData) {
+    const mainStr = [getData.sys.country, getData.name, getData.main, getData.weather[0].description]
+
+    let serializedObj = JSON.stringify(mainStr, null, " ")
+    serializedObj = serializedObj.replace(/["']/g, "").replace(/[{}]/g, "").replace(/[[\]]/g, "")
+
+    document.body.append(serializedObj)
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (display);
 
 /***/ }),
 
@@ -493,12 +499,12 @@ module.exports = styleTagTransform;
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "btn": () => (/* binding */ btn),
 /* harmony export */   "getApi": () => (/* binding */ getApi)
 /* harmony export */ });
+
 const btn = document.getElementById("generate")
 
 async function getApi() {
@@ -510,23 +516,14 @@ async function getApi() {
 
         const response = await fetch(URL, { mode: "cors" })
         const getData = await response.json()
-        // console.log(getData)
-
-        const mainStr = [getData.sys.country, getData.name, getData.main, getData.weather[0].description]
-
-        window.serializedStr = JSON.stringify(mainStr, null, " ")
-        window.serializedStr = window.serializedStr.replace(/["']/g, "").replace(/[{}]/g, "").replace(/[[\]]/g, "")
-
-        document.body.append(window.serializedStr)
-        // return getData
+        console.log(getData)
+        return getData
     } catch (error) {
         console.log(error)
         alert("Location not found, please try again.")
-        // return undefined
+        return undefined
     }
 }
-
-
 
 
 
@@ -606,9 +603,8 @@ async function getApi() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
@@ -616,14 +612,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _weather__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./weather */ "./src/weather.js");
 /* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dom */ "./src/dom.js");
-/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_dom__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 
 _weather__WEBPACK_IMPORTED_MODULE_1__.btn.addEventListener("click", (e) => {
     e.preventDefault()
-    ;(0,_weather__WEBPACK_IMPORTED_MODULE_1__.getApi)()
+    ;(0,_weather__WEBPACK_IMPORTED_MODULE_1__.getApi)().then((_dom__WEBPACK_IMPORTED_MODULE_2__["default"]))
 })
 })();
 
