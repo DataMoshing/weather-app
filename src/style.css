@@ -5,10 +5,3 @@ input[id=search] {
 #generate {
     width: 75px;
 }
-
-.main-wrap {
-    width: 135px;
-    /* display: flex; */
-    /* flex-direction: row; */
-    margin-top: 1rem;
-}
