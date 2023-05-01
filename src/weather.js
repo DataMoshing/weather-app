@@ -1,3 +1,4 @@
+
 const btn = document.getElementById("generate")
 
 async function getApi() {
@@ -9,21 +10,13 @@ async function getApi() {
 
         const response = await fetch(URL, { mode: "cors" })
         const getData = await response.json()
-        // console.log(getData)
-
-        const mainStr = [getData.sys.country, getData.name, getData.main, getData.weather[0].description]
-
-        let serializedObj = JSON.stringify(mainStr, null, " ")
-        serializedObj = serializedObj.replace(/["']/g, "").replace(/[{}]/g, "").replace(/[[\]]/g, "")
-
-        document.body.append(serializedObj)
-        // return getData
+        console.log(getData)
+        return getData
     } catch (error) {
         console.log(error)
         alert("Location not found, please try again.")
-        // return undefined
+        return undefined
     }
 }
 
 export { getApi, btn }
-
