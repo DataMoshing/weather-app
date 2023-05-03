@@ -1,11 +1,10 @@
 const span = document.getElementById("span");
 
-function displayClock() {
-    const display = new Date().toLocaleTimeString();
-    setTimeout(displayClock, 1000);
-    span.textContent = display
-    return display
-}
-window.onload = displayClock();
+function time() {
+    span.textContent = new Date().toLocaleTimeString();
+};
 
-export default displayClock
+setInterval(time, 1000);
+window.onload = time;
+
+export default time
