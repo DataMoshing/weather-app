@@ -1,8 +1,9 @@
+const weatherMain = document.createElement("div")
+const locationDiv = document.createElement("h1")
+
 function display(getData) {
     console.log(getData)
     const mainWrap = document.createElement("div")
-    const weatherMain = document.createElement("div")
-    const locationDiv = document.createElement("div")
     const descriptionDiv = document.createElement("div")
     const temperature = document.createElement("p")
     const feelsLike = document.createElement("p")
@@ -19,7 +20,6 @@ function display(getData) {
     humidity.className = "humidity"
     highTemp.className = "high"
     lowTemp.className = "low"
-
 
     const location = [getData.sys.country, getData.name]
     const temp = `Temperature: ${getData.main.temp} °F`
@@ -39,10 +39,11 @@ function display(getData) {
     highTemp.append(high)
     lowTemp.append(low)
     descriptionDiv.append(description)
+    mainWrap.append(locationDiv)
     mainWrap.append(weatherMain)
-    weatherMain.append(locationDiv, temperature, feelsLike, humidity, highTemp, lowTemp, descriptionDiv)
+    weatherMain.append(temperature, feelsLike, humidity, highTemp, lowTemp, descriptionDiv)
     document.body.append(mainWrap)
     return serializedObj
 }
 
-export default display
+export { display, weatherMain, locationDiv }
