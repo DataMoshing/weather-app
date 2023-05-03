@@ -10,7 +10,6 @@ async function getApi() {
 
         const response = await fetch(URL, { mode: "cors" })
         const getData = await response.json()
-        console.log(getData)
         return getData
     } catch (error) {
         console.log(error)
