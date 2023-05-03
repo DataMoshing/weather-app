@@ -15,24 +15,46 @@ p:last-child {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: "Dosis", sans-serif;
     font-size: 20px;
+    margin-top: 4rem;
+}
+
+header {
+    display: flex;
+    /* flex-direction:  */
+}
+
+h1 {
+    margin-right: 10px;
+}
+
+#span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input[id=search] {
     margin-right: 1rem;
     width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 5px;
+    background-color: rgb(228, 228, 228)
 }
 
-#generate {
-    width: 75px;
-}
 
 .search-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .main-wrap {
@@ -44,4 +66,40 @@ input[id=search] {
 
 .weather-main {
     margin-top: 2rem;
+}
+
+/*by UIForms*/
+#generate {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 15px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#generate:hover {
+    background-color: #fff;
+}
+
+#generate:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    #generate {
+        min-width: 120px;
+        padding: 0 25px;
+    }
 }
