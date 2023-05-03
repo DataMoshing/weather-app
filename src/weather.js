@@ -1,4 +1,3 @@
-
 const btn = document.getElementById("generate")
 
 async function getApi() {
