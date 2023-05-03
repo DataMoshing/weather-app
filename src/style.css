@@ -1,7 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+p,
+p:last-child {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+}
+
 input[id=search] {
+    margin-right: 1rem;
     width: 150px;
 }
 
 #generate {
     width: 75px;
+}
+
+.search-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.main-wrap {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-main {
+    margin-top: 2rem;
 }
