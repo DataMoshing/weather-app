@@ -1,8 +1,10 @@
 import "./style.css";
 import { btn, getApi } from "./weather"
-import display from "./dom"
+import { display, weatherMain, locationDiv } from "./dom"
 
 btn.addEventListener("click", (e) => {
     e.preventDefault()
     getApi().then((display))
+    weatherMain.textContent = ""
+    locationDiv.textContent = ""
 })
