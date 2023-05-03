@@ -20,8 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Dosis&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "input[id=search] {\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,YAAY;AAChB;;AAEA;IACI,WAAW;AACf","sourcesContent":["input[id=search] {\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 5rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,qBAAqB;IACrB,gBAAgB;AACpB;;AAEA;;IAEI,gBAAgB;IAChB,mBAAmB;AACvB;;AAEA;IACI,gCAAgC;IAChC,eAAe;AACnB;;AAEA;IACI,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 5rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -476,20 +477,59 @@ module.exports = styleTagTransform;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "display": () => (/* binding */ display),
+/* harmony export */   "locationDiv": () => (/* binding */ locationDiv),
+/* harmony export */   "weatherMain": () => (/* binding */ weatherMain)
 /* harmony export */ });
-// import { getApi } from "./weather";
+const weatherMain = document.createElement("div")
+const locationDiv = document.createElement("h1")
 
 function display(getData) {
-    const mainStr = [getData.sys.country, getData.name, getData.main, getData.weather[0].description]
+    console.log(getData)
+    const mainWrap = document.createElement("div")
+    const descriptionDiv = document.createElement("div")
+    const temperature = document.createElement("p")
+    const feelsLike = document.createElement("p")
+    const humidity = document.createElement("p")
+    const highTemp = document.createElement("p")
+    const lowTemp = document.createElement("p")
 
-    let serializedObj = JSON.stringify(mainStr, null, " ")
-    serializedObj = serializedObj.replace(/["']/g, "").replace(/[{}]/g, "").replace(/[[\]]/g, "")
+    mainWrap.className = "main-wrap"
+    weatherMain.className = "weather-main"
+    locationDiv.className = "location"
+    descriptionDiv.className = "description"
+    temperature.className = "temperature"
+    feelsLike.className = "feels-like"
+    humidity.className = "humidity"
+    highTemp.className = "high"
+    lowTemp.className = "low"
 
-    document.body.append(serializedObj)
+    const location = [getData.sys.country, getData.name]
+    const temp = `Temperature: ${getData.main.temp} °F`
+    const feelsLikeTemp = `Feels like: ${getData.main.feels_like} °F`
+    const humidityTemp = `Humidity: ${getData.main.humidity}%`
+    const high = `High: ${getData.main.temp_max} °F`
+    const low = `Low: ${getData.main.temp_min} °F`
+    const description = [getData.weather[0].description]
+    const mainStr = [location, temp, feelsLikeTemp, humidityTemp, high, low, description]
+
+    const serializedObj = JSON.stringify(mainStr, null, " ")
+
+    locationDiv.append(location)
+    temperature.append(temp)
+    feelsLike.append(feelsLikeTemp)
+    humidity.append(humidityTemp)
+    highTemp.append(high)
+    lowTemp.append(low)
+    descriptionDiv.append(description)
+    mainWrap.append(locationDiv)
+    mainWrap.append(weatherMain)
+    weatherMain.append(temperature, feelsLike, humidity, highTemp, lowTemp, descriptionDiv)
+    document.body.append(mainWrap)
+    return serializedObj
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (display);
+
 
 /***/ }),
 
@@ -516,7 +556,6 @@ async function getApi() {
 
         const response = await fetch(URL, { mode: "cors" })
         const getData = await response.json()
-        console.log(getData)
         return getData
     } catch (error) {
         console.log(error)
@@ -618,7 +657,9 @@ __webpack_require__.r(__webpack_exports__);
 
 _weather__WEBPACK_IMPORTED_MODULE_1__.btn.addEventListener("click", (e) => {
     e.preventDefault()
-    ;(0,_weather__WEBPACK_IMPORTED_MODULE_1__.getApi)().then((_dom__WEBPACK_IMPORTED_MODULE_2__["default"]))
+    ;(0,_weather__WEBPACK_IMPORTED_MODULE_1__.getApi)().then((_dom__WEBPACK_IMPORTED_MODULE_2__.display))
+    _dom__WEBPACK_IMPORTED_MODULE_2__.weatherMain.textContent = ""
+    _dom__WEBPACK_IMPORTED_MODULE_2__.locationDiv.textContent = ""
 })
 })();
 
