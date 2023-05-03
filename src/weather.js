@@ -12,7 +12,6 @@ async function getApi() {
         return getData
     } catch (error) {
         console.log(error)
-        alert("Location not found, please try again.")
         return undefined
     }
 }
