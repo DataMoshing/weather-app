@@ -1,7 +1,7 @@
 import "./style.css";
 import { btn, getApi } from "./weather"
 import { display, weatherMain, locationDiv } from "./dom"
-import displayClock from "./time";
+import time from "./time";
 
 btn.addEventListener("click", (e) => {
     e.preventDefault()
@@ -10,4 +10,4 @@ btn.addEventListener("click", (e) => {
     locationDiv.textContent = ""
 })
 
-displayClock()
+time()
