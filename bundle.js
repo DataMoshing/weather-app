@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Dosis&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 5rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,qBAAqB;IACrB,gBAAgB;AACpB;;AAEA;;IAEI,gBAAgB;IAChB,mBAAmB;AACvB;;AAEA;IACI,gCAAgC;IAChC,eAAe;AACnB;;AAEA;IACI,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n}\n\n#generate {\n    width: 75px;\n}\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 5rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n    margin-top: 4rem;\n}\n\nheader {\n    display: flex;\n    /* flex-direction:  */\n}\n\nh1 {\n    margin-right: 10px;\n}\n\n#span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n    height: 30px;\n    border-radius: 20px;\n    border: none;\n    padding-left: 5px;\n    background-color: rgb(228, 228, 228)\n}\n\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 3rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}\n\n/*by UIForms*/\n#generate {\n    background-color: #fbeee0;\n    border: 2px solid #422800;\n    border-radius: 30px;\n    box-shadow: #422800 4px 4px 0 0;\n    color: #422800;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: 600;\n    font-size: 15px;\n    padding: 0 15px;\n    line-height: 30px;\n    text-align: center;\n    text-decoration: none;\n    user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n}\n\n#generate:hover {\n    background-color: #fff;\n}\n\n#generate:active {\n    box-shadow: #422800 2px 2px 0 0;\n    transform: translate(2px, 2px);\n}\n\n@media (min-width: 768px) {\n    #generate {\n        min-width: 120px;\n        padding: 0 25px;\n    }\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,qBAAqB;IACrB,gBAAgB;AACpB;;AAEA;;IAEI,gBAAgB;IAChB,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;IACnB,gCAAgC;IAChC,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;IAClB,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,iBAAiB;IACjB;AACJ;;;AAGA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,gBAAgB;AACpB;;AAEA,aAAa;AACb;IACI,yBAAyB;IACzB,yBAAyB;IACzB,mBAAmB;IACnB,+BAA+B;IAC/B,cAAc;IACd,eAAe;IACf,qBAAqB;IACrB,gBAAgB;IAChB,eAAe;IACf,eAAe;IACf,iBAAiB;IACjB,kBAAkB;IAClB,qBAAqB;IACrB,iBAAiB;IACjB,yBAAyB;IACzB,0BAA0B;AAC9B;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,+BAA+B;IAC/B,8BAA8B;AAClC;;AAEA;IACI;QACI,gBAAgB;QAChB,eAAe;IACnB;AACJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n    margin-top: 4rem;\n}\n\nheader {\n    display: flex;\n    /* flex-direction:  */\n}\n\nh1 {\n    margin-right: 10px;\n}\n\n#span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n    height: 30px;\n    border-radius: 20px;\n    border: none;\n    padding-left: 5px;\n    background-color: rgb(228, 228, 228)\n}\n\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 3rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}\n\n/*by UIForms*/\n#generate {\n    background-color: #fbeee0;\n    border: 2px solid #422800;\n    border-radius: 30px;\n    box-shadow: #422800 4px 4px 0 0;\n    color: #422800;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: 600;\n    font-size: 15px;\n    padding: 0 15px;\n    line-height: 30px;\n    text-align: center;\n    text-decoration: none;\n    user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n}\n\n#generate:hover {\n    background-color: #fff;\n}\n\n#generate:active {\n    box-shadow: #422800 2px 2px 0 0;\n    transform: translate(2px, 2px);\n}\n\n@media (min-width: 768px) {\n    #generate {\n        min-width: 120px;\n        padding: 0 25px;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -485,7 +485,6 @@ const weatherMain = document.createElement("div")
 const locationDiv = document.createElement("h1")
 
 function display(getData) {
-    console.log(getData)
     const mainWrap = document.createElement("div")
     const descriptionDiv = document.createElement("div")
     const temperature = document.createElement("p")
@@ -533,6 +532,29 @@ function display(getData) {
 
 /***/ }),
 
+/***/ "./src/time.js":
+/*!*********************!*\
+  !*** ./src/time.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const span = document.getElementById("span");
+
+function time() {
+    span.textContent = new Date().toLocaleTimeString();
+};
+
+setInterval(time, 1000);
+window.onload = time;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (time);
+
+/***/ }),
+
 /***/ "./src/weather.js":
 /*!************************!*\
   !*** ./src/weather.js ***!
@@ -544,7 +566,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "btn": () => (/* binding */ btn),
 /* harmony export */   "getApi": () => (/* binding */ getApi)
 /* harmony export */ });
-
 const btn = document.getElementById("generate")
 
 async function getApi() {
@@ -559,10 +580,10 @@ async function getApi() {
         return getData
     } catch (error) {
         console.log(error)
-        alert("Location not found, please try again.")
         return undefined
     }
 }
+
 
 
 
@@ -651,6 +672,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _weather__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./weather */ "./src/weather.js");
 /* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dom */ "./src/dom.js");
+/* harmony import */ var _time__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./time */ "./src/time.js");
+
 
 
 
@@ -661,6 +684,8 @@ _weather__WEBPACK_IMPORTED_MODULE_1__.btn.addEventListener("click", (e) => {
     _dom__WEBPACK_IMPORTED_MODULE_2__.weatherMain.textContent = ""
     _dom__WEBPACK_IMPORTED_MODULE_2__.locationDiv.textContent = ""
 })
+
+;(0,_time__WEBPACK_IMPORTED_MODULE_3__["default"])()
 })();
 
 /******/ })()
