@@ -2,7 +2,6 @@ const weatherMain = document.createElement("div")
 const locationDiv = document.createElement("h1")
 
 function display(getData) {
-    console.log(getData)
     const mainWrap = document.createElement("div")
     const descriptionDiv = document.createElement("div")
     const temperature = document.createElement("p")
