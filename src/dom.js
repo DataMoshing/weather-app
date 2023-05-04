@@ -2,10 +2,6 @@ const weatherMain = document.createElement("div")
 const locationDiv = document.createElement("h1")
 
 function display(getData) {
-
-    const weatherSVG = new Image()
-    weatherSVG.src = "../src/assets/rainy-1.svg"
-
     const mainWrap = document.createElement("div")
     const descriptionDiv = document.createElement("div")
     const temperature = document.createElement("p")
@@ -44,7 +40,7 @@ function display(getData) {
     descriptionDiv.append(description)
     mainWrap.append(locationDiv)
     mainWrap.append(weatherMain)
-    weatherMain.append(temperature, feelsLike, humidity, highTemp, lowTemp, descriptionDiv, weatherSVG)
+    weatherMain.append(temperature, feelsLike, humidity, highTemp, lowTemp, descriptionDiv)
     document.body.append(mainWrap)
     return serializedObj
 }
