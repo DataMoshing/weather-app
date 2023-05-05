@@ -1,5 +1,12 @@
+import Icon from "./assets/rainy-1.svg"
+
 const weatherMain = document.createElement("div")
 const locationDiv = document.createElement("h1")
+const header = document.querySelector(".weather-header")
+
+const myIcon = new Image()
+myIcon.src = Icon
+header.append(myIcon)
 
 function display(getData) {
     const mainWrap = document.createElement("div")
