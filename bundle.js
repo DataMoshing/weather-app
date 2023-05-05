@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Dosis&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n    margin-top: 4rem;\n}\n\nheader {\n    display: flex;\n    /* flex-direction:  */\n}\n\nh1 {\n    margin-right: 10px;\n}\n\n#span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n    height: 30px;\n    border-radius: 20px;\n    border: none;\n    padding-left: 5px;\n    background-color: rgb(228, 228, 228)\n}\n\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 3rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}\n\n/*by UIForms*/\n#generate {\n    background-color: #fbeee0;\n    border: 2px solid #422800;\n    border-radius: 30px;\n    box-shadow: #422800 4px 4px 0 0;\n    color: #422800;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: 600;\n    font-size: 15px;\n    padding: 0 15px;\n    line-height: 30px;\n    text-align: center;\n    text-decoration: none;\n    user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n}\n\n#generate:hover {\n    background-color: #fff;\n}\n\n#generate:active {\n    box-shadow: #422800 2px 2px 0 0;\n    transform: translate(2px, 2px);\n}\n\n@media (min-width: 768px) {\n    #generate {\n        min-width: 120px;\n        padding: 0 25px;\n    }\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,qBAAqB;IACrB,gBAAgB;AACpB;;AAEA;;IAEI,gBAAgB;IAChB,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;IACnB,gCAAgC;IAChC,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;IAClB,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,iBAAiB;IACjB;AACJ;;;AAGA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,gBAAgB;AACpB;;AAEA,aAAa;AACb;IACI,yBAAyB;IACzB,yBAAyB;IACzB,mBAAmB;IACnB,+BAA+B;IAC/B,cAAc;IACd,eAAe;IACf,qBAAqB;IACrB,gBAAgB;IAChB,eAAe;IACf,eAAe;IACf,iBAAiB;IACjB,kBAAkB;IAClB,qBAAqB;IACrB,iBAAiB;IACjB,yBAAyB;IACzB,0BAA0B;AAC9B;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,+BAA+B;IAC/B,8BAA8B;AAClC;;AAEA;IACI;QACI,gBAAgB;QAChB,eAAe;IACnB;AACJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n    margin-top: 4rem;\n}\n\nheader {\n    display: flex;\n    /* flex-direction:  */\n}\n\nh1 {\n    margin-right: 10px;\n}\n\n#span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n    height: 30px;\n    border-radius: 20px;\n    border: none;\n    padding-left: 5px;\n    background-color: rgb(228, 228, 228)\n}\n\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 3rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}\n\n/*by UIForms*/\n#generate {\n    background-color: #fbeee0;\n    border: 2px solid #422800;\n    border-radius: 30px;\n    box-shadow: #422800 4px 4px 0 0;\n    color: #422800;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: 600;\n    font-size: 15px;\n    padding: 0 15px;\n    line-height: 30px;\n    text-align: center;\n    text-decoration: none;\n    user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n}\n\n#generate:hover {\n    background-color: #fff;\n}\n\n#generate:active {\n    box-shadow: #422800 2px 2px 0 0;\n    transform: translate(2px, 2px);\n}\n\n@media (min-width: 768px) {\n    #generate {\n        min-width: 120px;\n        padding: 0 25px;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n    margin-top: 4rem;\n}\n\nheader {\n    display: flex;\n    /* flex-direction:  */\n}\n\nh1 {\n    margin-right: 10px;\n    /* background: url(./rainy-1.svg) no-repeat; */\n}\n\n#span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n    height: 30px;\n    border-radius: 20px;\n    border: none;\n    padding-left: 5px;\n    background-color: rgb(228, 228, 228)\n}\n\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 3rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}\n\n/*by UIForms*/\n#generate {\n    background-color: #fbeee0;\n    border: 2px solid #422800;\n    border-radius: 30px;\n    box-shadow: #422800 4px 4px 0 0;\n    color: #422800;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: 600;\n    font-size: 15px;\n    padding: 0 15px;\n    line-height: 30px;\n    text-align: center;\n    text-decoration: none;\n    user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n}\n\n#generate:hover {\n    background-color: #fff;\n}\n\n#generate:active {\n    box-shadow: #422800 2px 2px 0 0;\n    transform: translate(2px, 2px);\n}\n\n@media (min-width: 768px) {\n    #generate {\n        min-width: 120px;\n        padding: 0 25px;\n    }\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,qBAAqB;IACrB,gBAAgB;AACpB;;AAEA;;IAEI,gBAAgB;IAChB,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;IACnB,gCAAgC;IAChC,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;IAClB,8CAA8C;AAClD;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;IAClB,YAAY;IACZ,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,iBAAiB;IACjB;AACJ;;;AAGA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,gBAAgB;AACpB;;AAEA;IACI,aAAa;IACb,SAAS;IACT,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,gBAAgB;AACpB;;AAEA,aAAa;AACb;IACI,yBAAyB;IACzB,yBAAyB;IACzB,mBAAmB;IACnB,+BAA+B;IAC/B,cAAc;IACd,eAAe;IACf,qBAAqB;IACrB,gBAAgB;IAChB,eAAe;IACf,eAAe;IACf,iBAAiB;IACjB,kBAAkB;IAClB,qBAAqB;IACrB,iBAAiB;IACjB,yBAAyB;IACzB,0BAA0B;AAC9B;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,+BAA+B;IAC/B,8BAA8B;AAClC;;AAEA;IACI;QACI,gBAAgB;QAChB,eAAe;IACnB;AACJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    text-decoration: none;\n    list-style: none;\n}\n\np,\np:last-child {\n    margin-top: 1rem;\n    margin-bottom: 1rem;\n}\n\nbody {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    font-family: \"Dosis\", sans-serif;\n    font-size: 20px;\n    margin-top: 4rem;\n}\n\nheader {\n    display: flex;\n    /* flex-direction:  */\n}\n\nh1 {\n    margin-right: 10px;\n    /* background: url(./rainy-1.svg) no-repeat; */\n}\n\n#span {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\ninput[id=search] {\n    margin-right: 1rem;\n    width: 150px;\n    height: 30px;\n    border-radius: 20px;\n    border: none;\n    padding-left: 5px;\n    background-color: rgb(228, 228, 228)\n}\n\n\n.search-wrap {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 3rem;\n}\n\n.main-wrap {\n    display: flex;\n    gap: 3rem;\n    justify-content: center;\n    align-items: center;\n}\n\n.weather-main {\n    margin-top: 2rem;\n}\n\n/*by UIForms*/\n#generate {\n    background-color: #fbeee0;\n    border: 2px solid #422800;\n    border-radius: 30px;\n    box-shadow: #422800 4px 4px 0 0;\n    color: #422800;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: 600;\n    font-size: 15px;\n    padding: 0 15px;\n    line-height: 30px;\n    text-align: center;\n    text-decoration: none;\n    user-select: none;\n    -webkit-user-select: none;\n    touch-action: manipulation;\n}\n\n#generate:hover {\n    background-color: #fff;\n}\n\n#generate:active {\n    box-shadow: #422800 2px 2px 0 0;\n    transform: translate(2px, 2px);\n}\n\n@media (min-width: 768px) {\n    #generate {\n        min-width: 120px;\n        padding: 0 25px;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -481,8 +481,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "locationDiv": () => (/* binding */ locationDiv),
 /* harmony export */   "weatherMain": () => (/* binding */ weatherMain)
 /* harmony export */ });
+/* harmony import */ var _assets_rainy_1_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/rainy-1.svg */ "./src/assets/rainy-1.svg");
+
+
 const weatherMain = document.createElement("div")
 const locationDiv = document.createElement("h1")
+const header = document.querySelector(".weather-header")
+
+const myIcon = new Image()
+myIcon.src = _assets_rainy_1_svg__WEBPACK_IMPORTED_MODULE_0__
+header.append(myIcon)
 
 function display(getData) {
     const mainWrap = document.createElement("div")
@@ -587,6 +595,16 @@ async function getApi() {
 
 
 
+/***/ }),
+
+/***/ "./src/assets/rainy-1.svg":
+/*!********************************!*\
+  !*** ./src/assets/rainy-1.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "44fb82231e1f5a7515c3.svg";
+
 /***/ })
 
 /******/ 	});
@@ -640,6 +658,18 @@ async function getApi() {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -654,6 +684,26 @@ async function getApi() {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
