@@ -13,7 +13,6 @@ async function getApi() {
         if (getData.sys === undefined) {
             return alert("404 (Not Found) - Please enter a valid location.")
         }
-
         return getData
     } catch (error) {
         return undefined
