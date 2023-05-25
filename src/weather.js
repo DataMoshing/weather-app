@@ -19,5 +19,4 @@ async function getApi() {
     }
 }
 
-
 export { getApi, btn }
