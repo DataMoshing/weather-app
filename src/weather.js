@@ -9,9 +9,13 @@ async function getApi() {
 
         const response = await fetch(URL, { mode: "cors" })
         const getData = await response.json()
+
+        if (getData.sys === undefined) {
+            return alert("404 (Not Found) - Please enter a valid location.")
+        }
+
         return getData
     } catch (error) {
-        console.log(error)
         return undefined
     }
 }
