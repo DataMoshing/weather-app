@@ -3,6 +3,7 @@ import Icon from "./assets/rainy-1.svg"
 const weatherMain = document.createElement("div")
 const locationDiv = document.createElement("h1")
 const header = document.querySelector(".weather-header")
+const search = document.querySelector("#search")
 
 const myIcon = new Image()
 myIcon.src = Icon
@@ -49,7 +50,8 @@ function display(getData) {
     mainWrap.append(weatherMain)
     weatherMain.append(temperature, feelsLike, humidity, highTemp, lowTemp, descriptionDiv)
     document.body.append(mainWrap)
+
     return serializedObj
 }
 
-export { display, weatherMain, locationDiv }
+export { display, weatherMain, locationDiv, search }
